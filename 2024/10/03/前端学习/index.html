@@ -22,7 +22,7 @@
 
   
 
-  <title>第一天对静态网站的研究 | Kanata</title>
+  <title>前端学习 | Kanata</title>
 
   
 
@@ -99,11 +99,11 @@
     <div class="header-content">
       <div class="post-text layout-block">
         <div class="layout-margin">
-          <h1 class="title-wrap">第一天对静态网站的研究</h1>
+          <h1 class="title-wrap">前端学习</h1>
           <h2 class="title-sub-wrap">
             <strong>J0ze</strong>
             <span>发布于</span>
-            <time  class="article-date" datetime="2024-09-27T16:25:43.000Z" itemprop="datePublished">2024-09-28</time>
+            <time  class="article-date" datetime="2024-10-03T15:03:37.000Z" itemprop="datePublished">2024-10-03</time>
           </h2>
           
           
@@ -112,7 +112,7 @@
 </ul>
           <ul class="wrap-list dark">
   
-    <li><a href="/tags/Mardown%E7%9A%84%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%B0%9D%E8%AF%95-%E5%92%8C-%E5%8A%A8%E6%80%81%E9%9F%B3%E9%A2%91%E7%9A%84%E6%8F%92%E5%85%A5/">🏷️ Mardown的第一次尝试 和 动态音频的插入</a></li>
+    <li><a href="/tags/%E5%AD%A6%E4%B9%A0-%E5%89%8D%E7%AB%AF/">🏷️ 学习 前端</a></li>
   
 </ul>
         </div>
@@ -136,21 +136,13 @@
       
       
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        <p>尝试学习了Markdown的基本语法，具体学习页面<a target="_blank" rel="noopener" href="https://markdown.com.cn/basic-syntax/links.html">Mardown官方教程</a>  </p>
-<p>其实很简单，接下来是我对插入图片和音频的学习</p>
-
-    <figure class="figure-image">
-      <img src="https://s2.loli.net/2024/09/28/AlcEmU5RuO3ndNX.jpg" alt="这是一个手办摄影照片" loading="lazy">
-      <figcaption>这是一个手办摄影照片</figcaption>
-    </figure>
-  
+        <p>Html学习<br>完整的一个Html页面</p>
 <blockquote>
-<p>其实只要用图床上传图片再加个title就行了</p>
+<p>&lt;!DOCTYPE&gt; html声明这是一个html5的文档<br>  &lt;html&gt; HTML页面的根元素<br>  &lt;head&gt; 包含了文档的元数据<br>  &lt;title&gt; 描述了文档的标题<br>  &lt;body&gt; 包含了文档可见页面的内容<br>  &lt;h1&gt; 定义一个大标题<br>  &lt;p1&gt; 定义一个段落”<br>HTML 语言并不是一个编程语言，而是一个用来用标记描述页面的语言。<br>基本语法<br>由开放标签和闭合标签构成<br>&lt;begain&gt; 内容 &lt;&#x2F;begain&gt;</p>
 </blockquote>
-<p>接下来是音频，最后就让咱们听一首歌吧</p>
-<div class="aplayer-box" data-url="https://dlink.host/musics/aHR0cHM6Ly9vbmVkcnYtbXkuc2hhcmVwb2ludC5jb20vOnU6L2cvcGVyc29uYWwvc3Rvcl9vbmVkcnZfb25taWNyb3NvZnRfY29tL0VYZjk1YUtNS2JkUG0xUG1ucmMwYkNvQnoyMDFLRzVxQWU1X1R4SjQzYTRyMmc.mp3" data-name="MOTTAI" data-artist="P丸様｡" data-cover="https://s2.loli.net/2024/09/28/gZ1k4PEHbuQMUdN.jpg"></div>
+<!DOCTYPE><p> 声明可以让浏览器知道所使用的html版本<br>html5的通用声明</p>
 <blockquote>
-<p>目前就这些啦</p>
+<p>&lt;!DOCTYPE html&gt;</p>
 </blockquote>
 
       </section>
@@ -158,6 +150,7 @@
       
       
         <nav class="article-nav">
+          
           
             <div class="article-nav-item layout-padding">
   <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
@@ -168,11 +161,10 @@
           <h2 class="card-text--title text-ellipsis">唯一的休息日被拉去团建，调休是什么逆天制度</h2>
         </a>
       
-      <div class="card-text--row">Newer</div>
+      <div class="card-text--row">Older</div>
     </div>
   </article>
 </div>
-          
           
         </nav>
       
@@ -536,35 +528,6 @@
 
   
   
-<!-- aplayer -->
-
-  <!-- aplayer 音频 start -->
-  <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
-  <script type="text/javascript">
-    const aplayer = document.querySelectorAll(".aplayer-box");
-    aplayer && initaplayer(aplayer);
-    function initaplayer(els) {
-      let elsArr = Array.from(els);
-      elsArr.forEach(el => {
-        let params = {
-          container: el,
-          audio: { ...el.dataset },
-          theme: "#b7daff",
-          autoplay: false,
-          loop: false,
-          mutex: true,
-        }
-        if (el.dataset.lrc) {
-          params['lrcType'] = 3
-        }
-        new APlayer(params);
-      });
-    }
-  </script>
-  <!-- aplayer 音频 end -->
-  
-
 
 
 
